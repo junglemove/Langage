@@ -16,12 +16,12 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
+/*
 const play = function play(){
     rl.question('Enter a number? ', function(answer) {
 
         if(isNaN(answer)){
-            throw Error(e.stack);
+            throw Error("is not a number");
         };
 
         if(answer ==  randomNumber){
@@ -44,4 +44,10 @@ const play = function play(){
     });
 };
 
-play();
+play();*/
+
+
+rl.question('line', function (input) { //Déclanche sur un input + enter dans la console
+    console.log(input);
+})
+
