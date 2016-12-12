@@ -21,7 +21,8 @@ const play = function play(){
     rl.question('Enter a number? ', function(answer) {
 
         if(isNaN(answer)){
-            throw Error("is not a number");
+            throw Error("is not a number");// ne peut pas s'utiliser dans une callback !
+                                            // console.log() à la place
         };
 
         if(answer ==  randomNumber){
