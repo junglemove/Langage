@@ -22,9 +22,9 @@ for(var i=0; i<3; i++){
 
 console.log("Use of closure to correctly display i:")
 for(var i=0; i<3; i++){
-    setTimeout(function timeoutHandler(){
-        logClosure(i);
-    }, 1000)
+    setTimeout(
+        logClosure(i)
+        , 1000)
 }
 
 console.log("Use ES6 to correctly display i:")
