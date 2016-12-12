@@ -7,8 +7,9 @@ const random = function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 };
 
+console.time("Random");
 const randomNumber = random(0,100);
-
+console.timeEnd("Random");
 const arrayOfInputs = new Array();
 
 const rl = readline.createInterface({
