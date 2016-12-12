@@ -13,21 +13,21 @@ const hello = logClosure('Hello');
 // la portée de hello est concervée
 hello();
 
-console.log("Need a closure to correctly display i:")
+/*"Need a closure to correctly display i:*/
 for(var i=0; i<3; i++){
     setTimeout(function timeoutHandler(){
         console.log(i);
     }, 1000)
 }
 
-console.log("Use of closure to correctly display i:")
+/*"Use of closure to correctly display i:*/
 for(var i=0; i<3; i++){
     setTimeout(
         logClosure(i)
         , 1000)
 }
 
-console.log("Use ES6 to correctly display i:")
+/*"Use ES6 to correctly display i:*/
 for(let i=0; i<3; i++){
     setTimeout(function timeoutHandler(){
         console.log(i);
